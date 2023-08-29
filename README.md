@@ -67,6 +67,228 @@
 
 <a id="item-five"></a>
 
+
+
+### 프로젝트 구조도
+
+<details>
+<summary>back-end</summary>
+
+```
+📦back-server
+ ┣ 📂accounts
+ ┃ ┣ 📂migrations
+ ┃ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┃ ┣ 📜0001_initial.cpython-39.pyc
+ ┃ ┃ ┃ ┣ 📜0002_user_followings.cpython-39.pyc
+ ┃ ┃ ┃ ┗ 📜__init__.cpython-39.pyc
+ ┃ ┃ ┣ 📜0001_initial.py
+ ┃ ┃ ┗ 📜__init__.py
+ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┣ 📜admin.cpython-39.pyc
+ ┃ ┃ ┣ 📜apps.cpython-39.pyc
+ ┃ ┃ ┣ 📜models.cpython-39.pyc
+ ┃ ┃ ┣ 📜serializers.cpython-39.pyc
+ ┃ ┃ ┣ 📜urls.cpython-39.pyc
+ ┃ ┃ ┣ 📜views.cpython-39.pyc
+ ┃ ┃ ┗ 📜__init__.cpython-39.pyc
+ ┃ ┣ 📜admin.py
+ ┃ ┣ 📜apps.py
+ ┃ ┣ 📜models.py
+ ┃ ┣ 📜serializers.py
+ ┃ ┣ 📜tests.py
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜views.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📂articles
+ ┃ ┣ 📂fixtures
+ ┃ ┃ ┣ 📜articles.json
+ ┃ ┃ ┗ 📜comments.json
+ ┃ ┣ 📂migrations
+ ┃ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┃ ┣ 📜0001_initial.cpython-39.pyc
+ ┃ ┃ ┃ ┣ 📜0002_article_user.cpython-39.pyc
+ ┃ ┃ ┃ ┣ 📜0003_comment_user.cpython-39.pyc
+ ┃ ┃ ┃ ┣ 📜0004_article_like_users.cpython-39.pyc
+ ┃ ┃ ┃ ┣ 📜0005_alter_article_user.cpython-39.pyc
+ ┃ ┃ ┃ ┗ 📜__init__.cpython-39.pyc
+ ┃ ┃ ┣ 📜0001_initial.py
+ ┃ ┃ ┗ 📜__init__.py
+ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┣ 📜admin.cpython-39.pyc
+ ┃ ┃ ┣ 📜apps.cpython-39.pyc
+ ┃ ┃ ┣ 📜models.cpython-39.pyc
+ ┃ ┃ ┣ 📜serializers.cpython-39.pyc
+ ┃ ┃ ┣ 📜urls.cpython-39.pyc
+ ┃ ┃ ┣ 📜views.cpython-39.pyc
+ ┃ ┃ ┗ 📜__init__.cpython-39.pyc
+ ┃ ┣ 📜admin.py
+ ┃ ┣ 📜apps.py
+ ┃ ┣ 📜models.py
+ ┃ ┣ 📜serializers.py
+ ┃ ┣ 📜tests.py
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜views.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📂media
+ ┃ ┣ 📜011734b81daa2402d16c22ef727bad93.jpg
+ ┃ ┣ 📜011734b81daa2402d16c22ef727bad93_BdUu6JO.jpg
+ ┃ ┣ 📜011734b81daa2402d16c22ef727bad93_BdUu6JO_dYtX077.jpg
+ ┃ ┣ 📜4f3055ba8acfc221569a2e6073ea3f6e.jpg
+ ┃ ┣ 📜ab741f1cf9b861d6dcccc584953dcda7.jpg
+ ┃ ┣ 📜ab741f1cf9b861d6dcccc584953dcda7_IswWA5q.jpg
+ ┃ ┣ 📜ab741f1cf9b861d6dcccc584953dcda7_paou2mI.jpg
+ ┃ ┣ 📜ab741f1cf9b861d6dcccc584953dcda7_WTnribS.jpg
+ ┃ ┣ 📜abc.png
+ ┃ ┣ 📜asd.jpg
+ ┃ ┣ 📜asd_aDL3oB0.jpg
+ ┃ ┣ 📜asd_qQA6UAU.jpg
+ ┃ ┣ 📜dd.jpg
+ ┃ ┣ 📜dd_FLb2feH.jpg
+ ┃ ┣ 📜dd_XvL5BML.jpg
+ ┃ ┣ 📜dd_YAkeUdQ.jpg
+ ┃ ┣ 📜dd_ZODYtsd.jpg
+ ┃ ┣ 📜default.png
+ ┃ ┗ 📜images.jpeg
+ ┣ 📂movies
+ ┃ ┣ 📂fixtures
+ ┃ ┃ ┣ 📜movies.json
+ ┃ ┃ ┗ 📜music.json
+ ┃ ┣ 📂migrations
+ ┃ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┃ ┣ 📜0001_initial.cpython-39.pyc
+ ┃ ┃ ┃ ┣ 📜0002_movie_like_users.cpython-39.pyc
+ ┃ ┃ ┃ ┣ 📜0002_music.cpython-39.pyc
+ ┃ ┃ ┃ ┗ 📜__init__.cpython-39.pyc
+ ┃ ┃ ┣ 📜0001_initial.py
+ ┃ ┃ ┗ 📜__init__.py
+ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┣ 📜admin.cpython-39.pyc
+ ┃ ┃ ┣ 📜apps.cpython-39.pyc
+ ┃ ┃ ┣ 📜models.cpython-39.pyc
+ ┃ ┃ ┣ 📜serializers.cpython-39.pyc
+ ┃ ┃ ┣ 📜urls.cpython-39.pyc
+ ┃ ┃ ┣ 📜views.cpython-39.pyc
+ ┃ ┃ ┗ 📜__init__.cpython-39.pyc
+ ┃ ┣ 📜admin.py
+ ┃ ┣ 📜apps.py
+ ┃ ┣ 📜models.py
+ ┃ ┣ 📜serializers.py
+ ┃ ┣ 📜tests.py
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜views.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📂my_api
+ ┃ ┣ 📂__pycache__
+ ┃ ┃ ┣ 📜settings.cpython-39.pyc
+ ┃ ┃ ┣ 📜urls.cpython-39.pyc
+ ┃ ┃ ┣ 📜wsgi.cpython-39.pyc
+ ┃ ┃ ┗ 📜__init__.cpython-39.pyc
+ ┃ ┣ 📜asgi.py
+ ┃ ┣ 📜settings.py
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜wsgi.py
+ ┃ ┗ 📜__init__.py
+ ┣ 📜accounts.json
+ ┣ 📜articles.json
+ ┣ 📜db.sqlite3
+ ┣ 📜manage.py
+ ┣ 📜movies.json
+ ┣ 📜requirements.txt
+ ┗ 📜xxx.json
+```
+</details>
+
+<details>
+<summary>front-end</summary>
+
+```
+📦front-server
+ ┣ 📂media
+ ┃ ┣ 📜default.png
+ ┃ ┗ 📜movie_back.jpg
+ ┣ 📂public
+ ┃ ┣ 📜favicon.ico
+ ┃ ┗ 📜index.html
+ ┣ 📂src
+ ┃ ┣ 📂assets
+ ┃ ┃ ┣ 📜base.scss
+ ┃ ┃ ┣ 📜LoginView.scss
+ ┃ ┃ ┣ 📜logo.png
+ ┃ ┃ ┣ 📜profileview.scss
+ ┃ ┃ ┣ 📜reset.scss
+ ┃ ┃ ┗ 📜SignupView.scss
+ ┃ ┣ 📂components
+ ┃ ┃ ┣ 📜ArticleList.vue
+ ┃ ┃ ┣ 📜ArticleListItem.vue
+ ┃ ┃ ┣ 📜CommentItem.vue
+ ┃ ┃ ┣ 📜CommentList.vue
+ ┃ ┃ ┣ 📜genreresult.vue
+ ┃ ┃ ┣ 📜MusicArticleItem.vue
+ ┃ ┃ ┣ 📜MusicArticleList.vue
+ ┃ ┃ ┣ 📜musicsearch.vue
+ ┃ ┃ ┗ 📜searchresult.vue
+ ┃ ┣ 📂media
+ ┃ ┃ ┣ 📜default.png
+ ┃ ┃ ┗ 📜movie_back.jpg
+ ┃ ┣ 📂router
+ ┃ ┃ ┗ 📜index.js
+ ┃ ┣ 📂store
+ ┃ ┃ ┗ 📜index.js
+ ┃ ┣ 📂views
+ ┃ ┃ ┣ 📜AllMovieView.vue
+ ┃ ┃ ┣ 📜AllMusicView.vue
+ ┃ ┃ ┣ 📜ArticleView.vue
+ ┃ ┃ ┣ 📜CreateView.vue
+ ┃ ┃ ┣ 📜DetailView.vue
+ ┃ ┃ ┣ 📜LogInView.vue
+ ┃ ┃ ┣ 📜LogoutView.vue
+ ┃ ┃ ┣ 📜MovieDetailView.vue
+ ┃ ┃ ┣ 📜MovieView.vue
+ ┃ ┃ ┣ 📜MusicArticleDetailView.vue
+ ┃ ┃ ┣ 📜MusicArticleView.vue
+ ┃ ┃ ┣ 📜MusicCreateView.vue
+ ┃ ┃ ┣ 📜MusicDetailView.vue
+ ┃ ┃ ┣ 📜NotFoundView.vue
+ ┃ ┃ ┣ 📜ProfileView.vue
+ ┃ ┃ ┣ 📜searchView.vue
+ ┃ ┃ ┣ 📜SignUpView.vue
+ ┃ ┃ ┣ 📜UpdateView.vue
+ ┃ ┃ ┗ 📜UserUpdateView.vue
+ ┃ ┣ 📜App.vue
+ ┃ ┣ 📜back.gif
+ ┃ ┣ 📜background.jpg
+ ┃ ┣ 📜createback.jpg
+ ┃ ┣ 📜default.png
+ ┃ ┣ 📜final_logo.png
+ ┃ ┣ 📜index.js
+ ┃ ┣ 📜main.js
+ ┃ ┣ 📜moviebackground.jpg
+ ┃ ┣ 📜movie_back.gif
+ ┃ ┣ 📜musicbackground.jpg
+ ┃ ┣ 📜pic.gif
+ ┃ ┣ 📜ppang.png
+ ┃ ┣ 📜profile.jpg
+ ┃ ┣ 📜profile_back.jpg
+ ┃ ┣ 📜search.jpg
+ ┃ ┗ 📜update_back.jg.jpg
+ ┣ 📜.gitignore
+ ┣ 📜babel.config.js
+ ┣ 📜jsconfig.json
+ ┣ 📜package-lock.json
+ ┣ 📜package.json
+ ┣ 📜README.md
+ ┣ 📜vue.config.js
+ ┗ 📜yarn.lock
+```
+</details>
+
+
+
+
+
+
+
 ## 🔍 추천 알고리즘 소개
 
 **Jaro–Winkler distance 문자열 유사도 알고리즘**
@@ -321,10 +543,11 @@ def search_music(request, musicname):
 ## 👍 느낀 점
 
 ##### 💙 최상익
+
 프로젝트를 처음 시작할 때는 무엇을 구현해야하는지, 어떤 방식으로 구현해야하는지 전부 막막하기만 했다. 그 부분에 있어서 페어로 프로젝트를 진행하는 것이 얼마나 도움이 되는지 느낄 수 있었다. 서로 의견을 교환하면서 하나하나씩 스케치 해나가니 프로젝트가 나아갈 방향을 설정할 수 있었다. 또한, 초반의 기획과 설계 단계가 정말 중요하다는 것을 알 수 있었다. 프로젝트를 진행하면서 더 나은 구현 방법을 찾을 수 있었는데 이미 구현이 어느정도 완료된 단계에서는 이전의 코드들을 수정하는 것이 굉장히 어려워 오랜 시간이 걸리거나 혹은 수정을 포기해야 하는 경우도 빈번했다. 많은 부분에서 초반 설계부터 고려했다면 더 나은 결과를 얻을 수 있을 거라는 생각을 자주 했다. 
 
   back과 front에 대한 지식들을 전반적으로 가지고 있는 것이 필수적이라는 생각을 했다. back은 front에 대한 지식이 있어야 front가 사용하기 쉬운 방식으로 back을 구성하여 전달할 수 있고, front는 back을 알고 있어야 back에서 전달된 산출물을 수월하게 사용할 수 있다. back과 front를 연결하는 부분에 있어서 양쪽에 대한 지식을 모두 가지고 있는 것이 편의성과 효율 측면에서 중요했다. 오류를 검출하는 부분에 있어서도 back과 front 혹은 그 연결에서의 문제인지 수월하게 확인할 수 있었다.
-  
+
   좀 더 시간이 있었다면 더 나은 결과가 나올 수 있을 거란 생각을 했지만 최종 결과물이 동료들에게 완성도가 높은 프로젝트라는 평가를 받을 수 있어서 만족스러웠다.
 
 ##### 💜 김예진
